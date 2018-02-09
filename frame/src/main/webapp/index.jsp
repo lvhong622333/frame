@@ -2,9 +2,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 	<head>
-		<script type="text/javascript" src="/js/jquery.js"></script>
-		<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
-	    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css"/>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
+		<script type="text/javascript" src="${pageContext.request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.min.css" />
 	    <link rel="icon" href="./static/image/main2.jpg" type="image/x-icon"/>
 	    <style type="text/css">
 	    		body{  
@@ -68,14 +68,14 @@
 			</span>
 		</div>
 		<div class="div1">
-			<img alt="图片1" src="./static/image/main1.jpg" class="img1"/>
-			<img alt="图片2" src="./static/image/main2.jpg" class="img1 img2">
-			<img alt="图片3" src="./static/image/main3.jpg" class="img1">
+			<img alt="图片1" src="${pageContext.request.contextPath}/static/image/main1.jpg" class="img1"/>
+			<img alt="图片2" src="${pageContext.request.contextPath}/static/image/main2.jpg" class="img1 img2">
+			<img alt="图片3" src="${pageContext.request.contextPath}/static/image/main3.jpg" class="img1">
 		</div>
 		<div class="div1">
-			<img alt="图片4" src="./static/image/main4.jpg" class="img1">
-			<img alt="图片6" src="./static/image/main5.jpg" class="img1 img2">
-			<img alt="图片5" src="./static/image/main6.jpg" class="img1">		
+			<img alt="图片4" src="${pageContext.request.contextPath}/static/image/main4.jpg" class="img1">
+			<img alt="图片6" src="${pageContext.request.contextPath}/static/image/main5.jpg" class="img1 img2">
+			<img alt="图片5" src="${pageContext.request.contextPath}/static/image/main6.jpg" class="img1">		
 		</div>
 	</body>
 </html>

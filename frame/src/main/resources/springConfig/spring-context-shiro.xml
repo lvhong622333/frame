@@ -27,14 +27,15 @@
 		<!-- <property name="unauthorizedUrl" value="/llr/index.jsp" /> -->
 		<property name="filterChainDefinitions">
 			<value>
-				/static/** = anon
+				<!-- /static/** = anon
 				/bootstrap/**=anon
 				/=anon
 				**/NewFile.jsp=anon
-				/js/**=anon
-				/** = authc
+				/js/**=anon -->
+				<!-- /** = anon -->
 			</value>
 		</property>
+		
 	</bean>
 
 	<!-- 将shiro的生命周期交由Spring管理 -->

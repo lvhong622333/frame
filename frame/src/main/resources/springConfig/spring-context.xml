@@ -87,4 +87,14 @@
 		<property name="filters" value="stat" />
 	</bean>
 	
+	<bean id="propertyConfiger" class="com.lvhong.util.PropertyConfiger">
+	   <property name="ignoreUnresolvablePlaceholders" value="true"/>
+	   <property name="ignoreResourceNotFound" value="true"/>
+	   <property name="locations">
+	       <list>
+	          <value>classpath:appconfig.properties</value>
+	       </list>
+	   </property>
+	</bean>
+	
 </beans>

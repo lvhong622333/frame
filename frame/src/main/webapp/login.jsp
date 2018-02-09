@@ -3,39 +3,45 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="/llr/static/image/timg1.jpeg" rel="icon" type="image/x-icon"/>
-<title>登陆页面</title>
+<link href="${pageContext.request.contextPath}/static/image/main1.jpg" rel="icon" type="image/x-icon" />
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/bootstrap/css/bootstrap.min.css" />
 <style type="text/css">
-	.form1{
-		margin-left: 500px;	
+	form{
+		margin-left: 400px;
 		margin-top: 300px;
 	}
-	div{
-		margin-bottom: 30px;
-	}
-	input {
-		width: 200px;
-		height: 30px;
-	}
 </style>
+<title>登陆页面</title>
 </head>
-<body>
-	<form action="login" class="form1">
-		<div>
-			<span>用户名:</span>		
-			<input name="userName" type="text" placeholder="请输入用户名"/>
+<body background="${pageContext.request.contextPath}/static/image/main2.jpg">
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+			<label for="name" class="col-md-2 control-label" style="color: white;">用户名</label>
+			<div class="col-md-4">
+				<input type="text" class="form-control" name="userName" placeholder="注册账号或者手机号码">
+			</div>
 		</div>
-		<div>
-			<span>密码:</span>
-			<input name="password" type="password" placeholder="请输入密码" />
+		<div class="form-group">
+			<label for="password" class="col-md-2 control-label" style="color: white;">密码</label>
+			<div class="col-md-4">
+				<input type="password" class="form-control" name="password" placeholder="请输入姓">
+			</div>
 		</div>
-		<div>
-			<span>记住我</span>
-			<input type="checkbox" name="rememberMe" value="rememberMe"/>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-4">
+				<div class="checkbox">
+					<label> <input type="checkbox" name="rememberMe" value="1"><font color="white">请记住我</font>
+					</label>
+				</div>
+			</div>
 		</div>
-		<div>
-			<input type="submit" value="登录"/>
-			<input type="reset" value="重置"/>
+		<div class="form-group">
+			<div class="col-md-offset-2 col-md-10">
+				<button type="submit" class="btn btn-default">登录</button>
+				<button type="reset" class="btn btn-default">重置</button>
+			</div>
 		</div>
 	</form>
 </body>

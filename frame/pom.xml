@@ -4,8 +4,8 @@
   <groupId>com.lvhong</groupId>
   <artifactId>frame</artifactId>
   <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
   <name>frame Maven Webapp</name>
+  <version>1.0</version>
   <url>http://maven.apache.org</url>
   <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -554,4 +554,5 @@
 			</activation>
 		</profile>
 	</profiles> -->
+	
 </project>
