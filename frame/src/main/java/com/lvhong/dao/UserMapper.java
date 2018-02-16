@@ -1,9 +1,10 @@
-package com.lvhong.mapper;
+package com.lvhong.dao;
+
+import java.util.Map;
 
 import com.lvhong.pojo.User;
 
 public interface UserMapper {
-
     int deleteByPrimaryKey(Integer id);
 
     int insert(User record);
@@ -16,6 +17,6 @@ public interface UserMapper {
 
     int updateByPrimaryKey(User record);
 
-	User queryUserByUserName(String username);
+	User findUserByPhone(Map<String, String> map);
 
 }

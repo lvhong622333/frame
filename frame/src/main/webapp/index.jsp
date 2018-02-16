@@ -57,12 +57,12 @@
 		</div>
 		<div align="right" >
 			<span class="span1">
-				<a href="register.jsp" class="login">
+				<a href="${pageContext.request.contextPath}/blogs/registerA" class="register">
 						注册
 				</a>
 			</span>
 			<span class="span1">
-				<a href="login.jsp" class="register">
+				<a href="${pageContext.request.contextPath}/blogs/loginA" class="login">
 						登录
 				</a>
 			</span>

@@ -49,7 +49,6 @@ public class AuthRealm extends AuthorizingRealm{
 	    User user = userService.queryUserByUserName(username);
 		AuthenticationInfo info = new SimpleAuthenticationInfo(user,user.getUserName(),this.getName());
 		return info;
-		
 	}
 	
 }
