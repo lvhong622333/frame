@@ -37,7 +37,7 @@
 		<!-- 引入数据源 -->
 		<property name="dataSource" ref="dataSource" />
 		<!-- 扫描orm映射文件 -->
-		<property name="mapperLocations" value="classpath*:com/lvhong/mapper/**/*.xml" />
+		<property name="mapperLocations" value="classpath*:/com/lvhong/dao/**/*.xml" />
 		<!-- 引入配置文件 -->
 		<property name="configLocation" value="classpath:/mybatis-config.xml"></property>
 	</bean>
